@@ -158,8 +158,8 @@ namespace P01_StudentSystem.Migrations
                 columns: new[] { "StudentId", "Birthday", "Name", "PhoneNumber", "RegisteredOn" },
                 values: new object[,]
                 {
-                    { 1, new DateOnly(1999, 1, 18), "Farouk", "0123456789", new DateTime(2025, 7, 20, 1, 37, 5, 33, DateTimeKind.Local).AddTicks(6288) },
-                    { 2, new DateOnly(2000, 6, 15), "Mohamed", "0112233445", new DateTime(2025, 7, 20, 1, 37, 5, 36, DateTimeKind.Local).AddTicks(9773) }
+                    { 1, new DateOnly(1999, 1, 18), "Farouk", "0123456789", new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateOnly(2000, 6, 15), "Mohamed", "0112233445", new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -167,8 +167,8 @@ namespace P01_StudentSystem.Migrations
                 columns: new[] { "HomeworkId", "Content", "ContentType", "CourseId", "StudentId", "SubmissionTime" },
                 values: new object[,]
                 {
-                    { 1, "C# homework ", 1, 1, 1, new DateTime(2025, 7, 20, 1, 37, 5, 38, DateTimeKind.Local).AddTicks(8984) },
-                    { 2, "C++ homework ", 2, 2, 2, new DateTime(2025, 7, 20, 1, 37, 5, 39, DateTimeKind.Local).AddTicks(96) }
+                    { 1, "C# homework ", 1, 1, 1, new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, "C++ homework ", 2, 2, 2, new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(

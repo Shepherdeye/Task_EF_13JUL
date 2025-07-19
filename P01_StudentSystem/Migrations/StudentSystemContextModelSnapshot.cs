@@ -130,7 +130,7 @@ namespace P01_StudentSystem.Migrations
                             ContentType = 1,
                             CourseId = 1,
                             StudentId = 1,
-                            SubmissionTime = new DateTime(2025, 7, 20, 1, 37, 5, 38, DateTimeKind.Local).AddTicks(8984)
+                            SubmissionTime = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
@@ -139,7 +139,7 @@ namespace P01_StudentSystem.Migrations
                             ContentType = 2,
                             CourseId = 2,
                             StudentId = 2,
-                            SubmissionTime = new DateTime(2025, 7, 20, 1, 37, 5, 39, DateTimeKind.Local).AddTicks(96)
+                            SubmissionTime = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -228,7 +228,7 @@ namespace P01_StudentSystem.Migrations
                             Birthday = new DateOnly(1999, 1, 18),
                             Name = "Farouk",
                             PhoneNumber = "0123456789",
-                            RegisteredOn = new DateTime(2025, 7, 20, 1, 37, 5, 33, DateTimeKind.Local).AddTicks(6288)
+                            RegisteredOn = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
@@ -236,7 +236,7 @@ namespace P01_StudentSystem.Migrations
                             Birthday = new DateOnly(2000, 6, 15),
                             Name = "Mohamed",
                             PhoneNumber = "0112233445",
-                            RegisteredOn = new DateTime(2025, 7, 20, 1, 37, 5, 36, DateTimeKind.Local).AddTicks(9773)
+                            RegisteredOn = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 

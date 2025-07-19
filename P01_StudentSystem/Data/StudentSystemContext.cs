@@ -43,7 +43,7 @@ namespace P01_StudentSystem.Data
                     StudentId = 1,
                     Name = "Farouk",
                     PhoneNumber = "0123456789",
-                    RegisteredOn = DateTime.Now,
+                    RegisteredOn = new DateTime(2023, 1, 1),
                     Birthday = new DateOnly(1999, 1, 18)
                 },
                 new Student
@@ -51,7 +51,7 @@ namespace P01_StudentSystem.Data
                     StudentId = 2,
                     Name = "Mohamed",
                     PhoneNumber = "0112233445",
-                    RegisteredOn = DateTime.Now,
+                    RegisteredOn = new DateTime(2023, 1, 1),
                     Birthday = new DateOnly(2000, 6, 15)
                 }
             );
@@ -112,7 +112,7 @@ namespace P01_StudentSystem.Data
                     HomeworkId = 1,
                     Content = "C# homework ",
                     ContentType = ContentType.Pdf,
-                    SubmissionTime = DateTime.Now,
+                    SubmissionTime = new DateTime(2023, 1, 1),
                     StudentId = 1,
                     CourseId = 1
                 },
@@ -121,7 +121,7 @@ namespace P01_StudentSystem.Data
                     HomeworkId = 2,
                     Content = "C++ homework ",
                     ContentType = ContentType.Zip,
-                    SubmissionTime = DateTime.Now,
+                    SubmissionTime = new DateTime(2023, 1, 1),
                     StudentId = 2,
                     CourseId = 2
                 }
