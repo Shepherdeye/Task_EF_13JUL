@@ -12,7 +12,7 @@ using P02_SalesDatabase.Data;
 namespace P02_SalesDatabase.Migrations
 {
     [DbContext(typeof(SalesContext))]
-    [Migration("20250719233011_SalesAddDateDefault")]
+    [Migration("20250720020640_SalesAddDateDefault")]
     partial class SalesAddDateDefault
     {
         /// <inheritdoc />
@@ -100,7 +100,7 @@ namespace P02_SalesDatabase.Migrations
                     b.Property<DateTime>("Date")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2025, 7, 20, 2, 30, 10, 232, DateTimeKind.Local).AddTicks(1648));
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");

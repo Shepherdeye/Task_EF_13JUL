@@ -27,7 +27,7 @@ namespace P02_SalesDatabase.Data
                 .Property(p => p.Description)
                 .HasDefaultValue("No description");
             modelBuilder.Entity<Sale>()
-                .Property(s => s.Date).HasDefaultValue(DateTime.Now);
+                .Property(s => s.Date).HasDefaultValueSql("GETDATE()");
         }
     }
 }
