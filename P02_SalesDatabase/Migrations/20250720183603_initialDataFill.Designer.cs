@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using P02_SalesDatabase.Data;
 
@@ -11,9 +12,11 @@ using P02_SalesDatabase.Data;
 namespace P02_SalesDatabase.Migrations
 {
     [DbContext(typeof(SalesContext))]
-    partial class SalesContextModelSnapshot : ModelSnapshot
+    [Migration("20250720183603_initialDataFill")]
+    partial class initialDataFill
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
