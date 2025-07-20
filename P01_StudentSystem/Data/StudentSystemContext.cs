@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace P01_StudentSystem.Data
 {
-    internal class StudentSystemContext : DbContext
+    public class StudentSystemContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
@@ -20,8 +20,8 @@ namespace P01_StudentSystem.Data
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Student System;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
-        
-        
+
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
